@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛弗·科赛 | 高清隐藏式行车记录仪 TikTok 内容增长战略书</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tiktok: {
+                            bg: '#000000',
+                            cyan: '#25F4EE',
+                            pink: '#FE2C55',
+                            dark: '#121212',
+                            card: '#1E1E1E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 10px rgba(37, 244, 238, 0.5)',
+                        'neon-pink': '0 0 10px rgba(254, 44, 85, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #25F4EE, #FE2C55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -20%;
+            width: 50%;
+            height: 50%;
+            background: rgba(37, 244, 238, 0.1);
+            filter: blur(100px);
+            border-radius: 50%;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            right: -20%;
+            width: 50%;
+            height: 50%;
+            background: rgba(254, 44, 85, 0.1);
+            filter: blur(100px);
+            border-radius: 50%;
+        }
+
+        /* Pyramid/Stair Styles */
+        .pyramid-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .pyramid-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+
+        /* Glassmorphism for Table */
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Table styles for mobile responsiveness */
+        @media (max-width: 768px) {
+            .responsive-table thead {
+                display: none;
+            }
+            .responsive-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                background-color: rgba(255,255,255,0.05); /* Slightly lighter for mobile cards */
+                border-radius: 0.5rem;
+                padding: 1rem;
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+            .responsive-table td {
+                display: block;
+                text-align: right;
+                padding: 0.5rem 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            .responsive-table td:last-child {
+                border-bottom: none;
+            }
+            .responsive-table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                color: #9CA3AF;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-tiktok-pink selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo Area: Seafer & Cosai -->
+                <div class="flex items-center">
+                    <!-- Seafer Logo -->
+                    <div class="flex items-center gap-2">
+                         <img src="赛弗logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Seafer Logo" class="h-8 w-auto object-contain">
+                         <span class="text-xl font-bold tracking-tighter hidden" style="display: none;">SEAFER<span class="text-tiktok-cyan">.</span></span>
+                    </div>
+                    
+                    <!-- Divider -->
+                    <div class="h-4 w-px bg-white/20 mx-4"></div>
+
+                    <!-- Cosai Logo -->
+                    <div class="flex items-center gap-2">
+                        <img src="cff77e5c13b12fb0e26f31941770369.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Cosai Logo" class="h-8 w-auto object-contain">
+                        <span class="text-lg font-medium text-gray-300 hidden" style="display: none;">COSAI</span>
+                    </div>
+                </div>
+                
+                <div class="text-xs md:text-sm text-gray-500 font-mono hidden sm:block">
+                    STRATEGY_DOC_V1.2
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[80vh] flex items-center justify-center pt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 border border-tiktok-cyan/30 rounded-full bg-tiktok-cyan/10 backdrop-blur-sm">
+                <span class="text-tiktok-cyan text-sm font-semibold tracking-wide">STRATEGY BRIEFING 2025</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                高清隐藏式行车记录仪<br>
+                <span class="gradient-text">TikTok内容增长战略书</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8 font-light max-w-2xl mx-auto">
+                基于“AI 爆款复刻”与“素材迭代升级”的<br class="md:hidden">流量解决方案
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#rationale" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    查看立项依据
+                </a>
+                <a href="#plan" class="px-8 py-4 bg-transparent border border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition-colors">
+                    查看执行计划
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-16 bg-tiktok-dark border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">核心触达人群 (Target Audience)</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                    基于对 TikTok 平台 <span class="text-tiktok-cyan font-bold">5,000+ 条</span> 行车记录仪爆款视频的<span class="text-white font-semibold">深度拆解</span>与<span class="text-white font-semibold">数据回溯</span>，
+                    我们剥离了无效流量，精准锁定了以下四大具备“高转化潜力”的核心车主画像。
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Audience Cards -->
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-white/5 hover:border-tiktok-cyan/30 transition-all">
+                    <div class="w-12 h-12 bg-tiktok-cyan/10 rounded-full flex items-center justify-center mb-4 text-tiktok-cyan"><i class="fa-solid fa-microchip text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-2">科技极客族</h3>
+                    <div class="mt-4 text-xs text-tiktok-cyan font-mono">#TechSavvy</div>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-white/5 hover:border-tiktok-pink/30 transition-all">
+                    <div class="w-12 h-12 bg-tiktok-pink/10 rounded-full flex items-center justify-center mb-4 text-tiktok-pink"><i class="fa-solid fa-shield-cat text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-2">安全焦虑派</h3>
+                    <div class="mt-4 text-xs text-tiktok-pink font-mono">#SafetyFirst</div>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-white/5 hover:border-blue-400/30 transition-all">
+                    <div class="w-12 h-12 bg-blue-400/10 rounded-full flex items-center justify-center mb-4 text-blue-400"><i class="fa-solid fa-screwdriver-wrench text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-2">DIY 动手党</h3>
+                    <div class="mt-4 text-xs text-blue-400 font-mono">#CarMods</div>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-white/5 hover:border-purple-400/30 transition-all">
+                    <div class="w-12 h-12 bg-purple-400/10 rounded-full flex items-center justify-center mb-4 text-purple-400"><i class="fa-solid fa-camera-retro text-xl"></i></div>
+                    <h3 class="text-lg font-bold mb-2">自驾分享家</h3>
+                    <div class="mt-4 text-xs text-purple-400 font-mono">#RoadTrip</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Rationale / Initiation Basis (NEW SECTION) -->
+    <section id="rationale" class="py-20 bg-black relative border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <span class="text-tiktok-cyan text-xs font-bold tracking-wider uppercase mb-2 block">Data-Driven Strategy</span>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">竞品爆款 vs. 本品特性：内容立项依据推导</h2>
+                <div class="p-6 bg-gradient-to-r from-gray-900 to-black border border-white/10 rounded-2xl relative overflow-hidden">
+                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-tiktok-cyan"></div>
+                    <p class="text-gray-300 italic relative z-10 text-sm md:text-lg leading-relaxed">
+                        “我们做这些内容不是拍脑袋决定的，而是因为市场上这群人正在疯狂买单，而您的产品恰好能更完美地满足他们。”
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Group 1: Tech Savvy -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#181818] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="lg:col-span-3 bg-gray-900 p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                        <h3 class="text-xl font-bold text-white mb-2">01. 科技极客族</h3>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mb-4">The Tech-Savvy</span>
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-gray-300">参考爆款：</strong>RedTiger, Mirror Cam</p>
+                            <p><strong class="text-gray-300">核心痛点：</strong>厌恶拔卡繁琐，对模糊画质零容忍。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6 border-b md:border-b-0 md:border-r border-white/5">
+                            <h4 class="text-red-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-chart-line mr-2"></i>竞品爆款逻辑</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-3">
+                                竞品疯狂强调 APP 的操控性（下载/分享/删除）以及 4K/1080P 的参数堆叠，验证了“手机直连”是高转化痛点。
+                            </p>
+                            <div class="bg-red-500/5 text-red-300 text-xs p-2 rounded">
+                                劣势：很多竞品仅前摄 4K，APP 体验卡顿。
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-br from-tiktok-cyan/5 to-transparent">
+                            <h4 class="text-tiktok-cyan font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-bolt mr-2"></i>本品破局点 (Our Edge)</h4>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                                <li><i class="fa-solid fa-check text-tiktok-cyan mr-1"></i> <strong>Dual 4K:</strong> 真双4K vs 竞品伪4K</li>
+                                <li><i class="fa-solid fa-check text-tiktok-cyan mr-1"></i> <strong>WiFi:</strong> 5Ghz/2.4Ghz 丝滑直连</li>
+                            </ul>
+                            <div class="p-3 border border-tiktok-cyan/20 rounded bg-black/20">
+                                <span class="text-xs font-bold text-tiktok-cyan block mb-1">👉 立项依据 (Action):</span>
+                                <p class="text-xs text-gray-400">T0 数字人演示“5秒传视频” + T1 实拍证明“真双4K”清晰度。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: DIY Perfectionist -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#181818] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="lg:col-span-3 bg-gray-900 p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                        <h3 class="text-xl font-bold text-white mb-2">02. 安装焦虑族</h3>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mb-4">The DIY Perfectionist</span>
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-gray-300">参考爆款：</strong>ASMR Install, RedTiger</p>
+                            <p><strong class="text-gray-300">核心痛点：</strong>怕线材杂乱丑陋，担心“手残”装不好。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6 border-b md:border-b-0 md:border-r border-white/5">
+                            <h4 class="text-red-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-chart-line mr-2"></i>竞品爆款逻辑</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                ASMR 沉浸式安装视频完播率极高，竞品主打 "Clean Look"（整洁外观）和赠送工具，证明“过程展示”即种草。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-gradient-to-br from-blue-400/5 to-transparent">
+                            <h4 class="text-blue-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-bolt mr-2"></i>本品破局点 (Our Edge)</h4>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                                <li><i class="fa-solid fa-check text-blue-400 mr-1"></i> <strong>配件赠送:</strong> 明确包含 Pry Tool (撬棒)</li>
+                                <li><i class="fa-solid fa-check text-blue-400 mr-1"></i> <strong>紧凑设计:</strong> 专为隐藏式布线优化</li>
+                            </ul>
+                            <div class="p-3 border border-blue-400/20 rounded bg-black/20">
+                                <span class="text-xs font-bold text-blue-400 block mb-1">👉 立项依据 (Action):</span>
+                                <p class="text-xs text-gray-400">复刻 ASMR 结构做 T1 (解压安装)，配合全案解说，直接打消“安装恐惧”。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: Anxious Protector -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#181818] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="lg:col-span-3 bg-gray-900 p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                        <h3 class="text-xl font-bold text-white mb-2">03. 缺乏安全感</h3>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mb-4">The Anxious Protector</span>
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-gray-300">参考爆款：</strong>SafeCam, Mini Cam</p>
+                            <p><strong class="text-gray-300">核心痛点：</strong>怕碰瓷、怕停车被刮、无证据焦虑。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6 border-b md:border-b-0 md:border-r border-white/5">
+                            <h4 class="text-red-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-chart-line mr-2"></i>竞品爆款逻辑</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                竞品利用“恐惧营销”强调“逃不掉”(Walang kawala) 和 24H 监控，精准击中用户的不安全感。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-gradient-to-br from-tiktok-pink/5 to-transparent">
+                            <h4 class="text-tiktok-pink font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-bolt mr-2"></i>本品破局点 (Our Edge)</h4>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                                <li><i class="fa-solid fa-check text-tiktok-pink mr-1"></i> <strong>170° 超广角:</strong> 比竞品 140° 视野更宽</li>
+                                <li><i class="fa-solid fa-check text-tiktok-pink mr-1"></i> <strong>24/7 监控:</strong> 真正的无死角守护</li>
+                            </ul>
+                            <div class="p-3 border border-tiktok-pink/20 rounded bg-black/20">
+                                <span class="text-xs font-bold text-tiktok-pink block mb-1">👉 立项依据 (Action):</span>
+                                <p class="text-xs text-gray-400">T0 数字人讲故事放大焦虑，T1 实拍展示广角视野完美解决焦虑。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4: Content Creator -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#181818] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="lg:col-span-3 bg-gray-900 p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                        <h3 class="text-xl font-bold text-white mb-2">04. 生活记录者</h3>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest mb-4">The Content Creator</span>
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-gray-300">参考爆款：</strong>RedTiger (Car Content)</p>
+                            <p><strong class="text-gray-300">核心痛点：</strong>想拍 Vlog 但相机太贵，想记录自驾风景。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6 border-b md:border-b-0 md:border-r border-white/5">
+                            <h4 class="text-red-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-chart-line mr-2"></i>竞品爆款逻辑</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                竞品刚开始触及的蓝海，明确提到适合 "Car Content Creator"，转化年轻增量用户。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-gradient-to-br from-purple-400/5 to-transparent">
+                            <h4 class="text-purple-400 font-bold mb-3 text-sm flex items-center"><i class="fa-solid fa-bolt mr-2"></i>本品破局点 (Our Edge)</h4>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-4">
+                                <li><i class="fa-solid fa-check text-purple-400 mr-1"></i> <strong>画质越级:</strong> 媲美入门运动相机</li>
+                                <li><i class="fa-solid fa-check text-purple-400 mr-1"></i> <strong>Vlog定位:</strong> 不止是记录仪</li>
+                            </ul>
+                            <div class="p-3 border border-purple-400/20 rounded bg-black/20">
+                                <span class="text-xs font-bold text-purple-400 block mb-1">👉 立项依据 (Action):</span>
+                                <p class="text-xs text-gray-400">利用 T2 生成绝美风景路况（视觉奇观），暗示“你也能拍出大片”，抢占心智。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Block -->
+            <div class="mt-12 bg-white/5 border border-white/10 rounded-xl p-8 text-center max-w-4xl mx-auto backdrop-blur-sm">
+                <i class="fa-solid fa-quote-left text-gray-600 text-2xl mb-4 block"></i>
+                <h3 class="text-lg md:text-xl font-medium text-gray-200 leading-relaxed mb-2">
+                    我们的策略是：用 <span class="text-tiktok-cyan">T1/T2</span> 的形式复刻竞品验证过的流量密码，<br class="hidden md:block">
+                    再结合您产品 <span class="text-white font-bold">“双4K + WiFi”</span> 的差异化优势，用 <span class="text-tiktok-pink">T0 数字人</span> 进行更高维度的信任收割。
+                </h3>
+                <span class="text-xs text-gray-500 uppercase tracking-wider mt-4 block">— 一句话立项书</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Concept: The Pyramid -->
+    <section id="pyramid" class="py-20 bg-tiktok-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <!-- Renamed Title & Subtitle -->
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">赛弗·内容生态金字塔</h2>
+                <p class="text-gray-400">The Seafer Ecosystem: 数据驱动的流量分层战略与心智占领</p>
+            </div>
+
+            <!-- Pyramid Structure -->
+            <div class="flex flex-col items-center space-y-4 max-w-4xl mx-auto relative">
+                <!-- Connecting Line (Visual Guide) -->
+                <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-tiktok-pink via-tiktok-cyan to-transparent -translate-x-1/2 opacity-30 hidden md:block z-0"></div>
+
+                <!-- Tier T0: The Trust Anchor (Upgraded Content) -->
+                <div class="w-full md:w-3/5 z-10">
+                    <div class="pyramid-card bg-gradient-to-r from-[#2a1b20] to-[#1E1E1E] p-6 rounded-xl border-l-4 border-tiktok-pink relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-crown text-6xl"></i>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-tiktok-pink/20 p-3 rounded-lg text-tiktok-pink shrink-0">
+                                <span class="font-black text-xl">T0</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">品牌意志层 (Brand Identity)</h3>
+                                <p class="text-gray-400 text-sm mb-3">T1 视觉基底 + 数字人 (Digital Avatar) 人格赋能</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-tiktok-pink"></i>
+                                        <span>复用高转化视觉基底，叠加品牌人格演绎</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-tiktok-pink"></i>
+                                        <span>构建私域情感连接，完成用户心智占领</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 inline-block bg-tiktok-pink/10 text-tiktok-pink text-xs px-2 py-1 rounded">战略目标：品牌资产沉淀与高客单转化</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tier T1: The Reality Boost (Upgraded Content) -->
+                <div class="w-full md:w-4/5 z-10">
+                    <div class="pyramid-card bg-gradient-to-r from-[#1b252a] to-[#1E1E1E] p-6 rounded-xl border-l-4 border-tiktok-cyan relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-video text-6xl"></i>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-tiktok-cyan/20 p-3 rounded-lg text-tiktok-cyan shrink-0">
+                                <span class="font-black text-xl">T1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">信任锚点层 (Reality Anchor)</h3>
+                                <p class="text-gray-400 text-sm mb-3">T2 结构基底 + 实景交互 (Real Interaction) + 认知引导</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-tiktok-cyan"></i>
+                                        <span>全真用车场景深度植入，消除合成疏离感</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-tiktok-cyan"></i>
+                                        <span>专业声学心理引导 (Pro VO)，强化产品价值锚点</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 inline-block bg-tiktok-cyan/10 text-tiktok-cyan text-xs px-2 py-1 rounded">战略目标：产品价值深度种草与信任构建</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tier T2: The Viral Base (Upgraded Content) -->
+                <div class="w-full z-10">
+                    <div class="pyramid-card bg-[#1E1E1E] p-6 rounded-xl border-l-4 border-gray-500 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fa-solid fa-robot text-6xl"></i>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-gray-700/50 p-3 rounded-lg text-gray-300 shrink-0">
+                                <span class="font-black text-xl">T2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">流量共振层 (Viral Resonance)</h3>
+                                <p class="text-gray-400 text-sm mb-3">AIGC 自动化重构 + 数据归因 (Data Attribution)</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-gray-500"></i>
+                                        <span>基于算法逻辑重构爆款视觉模型，构建海量触点</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                                        <i class="fa-solid fa-check text-gray-500"></i>
+                                        <span>去中心化极速分发，实现广域流量捕获</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 inline-block bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded">战略目标：低成本流量探测与市场声量铺设</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 1 Action Plan -->
+    <section id="plan" class="py-20 bg-black relative">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Phase 1 执行计划</h2>
+                    <p class="text-gray-400">首批 8 条测试方案：场景与痛点全覆盖</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="flex items-center gap-1 text-xs text-gray-400"><span class="w-3 h-3 rounded-full bg-tiktok-pink"></span> T0 旗舰</span>
+                    <span class="flex items-center gap-1 text-xs text-gray-400"><span class="w-3 h-3 rounded-full bg-tiktok-cyan"></span> T1 进阶</span>
+                    <span class="flex items-center gap-1 text-xs text-gray-400"><span class="w-3 h-3 rounded-full bg-gray-500"></span> T2 基础</span>
+                </div>
+            </div>
+
+            <!-- Glassmorphism Container for Table -->
+            <div class="glass-panel rounded-2xl overflow-hidden p-1 md:p-2">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse responsive-table">
+                        <thead>
+                            <tr class="text-gray-400 text-sm border-b border-gray-700/50">
+                                <th class="p-4 font-medium w-24">形式等级</th>
+                                <th class="p-4 font-medium w-40">核心痛点</th>
+                                <th class="p-4 font-medium">内容执行配方 (The Recipe)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <!-- Row 1: T0 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-pink/10 text-tiktok-pink border border-tiktok-pink/20">T0 数字人</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-shield-halved mr-2 text-gray-500"></i>防碰瓷 (信任向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 车祸现场背景]</span> + <span class="text-tiktok-cyan">[T1 真实证据+解说]</span> + <span class="text-tiktok-pink font-medium">[T0 数字人老司机讲述]</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2: T1 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-cyan/10 text-tiktok-cyan border border-tiktok-cyan/20">T1 实拍+VO</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-wrench mr-2 text-gray-500"></i>隐形安装 (教学向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 爆款安装节奏]</span> + <span class="text-tiktok-cyan font-medium">[达人演示藏线特写 + 硬核解说]</span> <span class="text-xs text-gray-500 ml-1">(无ASMR)</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3: T0 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-pink/10 text-tiktok-pink border border-tiktok-pink/20">T0 数字人</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-wifi mr-2 text-gray-500"></i>WiFi秒传 (功能向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 科技感背景]</span> + <span class="text-tiktok-cyan">[T1 APP录屏实操+解说]</span> + <span class="text-tiktok-pink font-medium">[T0 数字人博主引导]</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4: T1 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-cyan/10 text-tiktok-cyan border border-tiktok-cyan/20">T1 实拍+VO</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-eye mr-2 text-gray-500"></i>4K画质 (证据向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 路测视频结构]</span> + <span class="text-tiktok-cyan font-medium">[真实4K路测覆盖 + 全程参数解读]</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5: T0 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-pink/10 text-tiktok-pink border border-tiktok-pink/20">T0 数字人</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-camera mr-2 text-gray-500"></i>Vlog神器 (种草向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 风景驾驶背景]</span> + <span class="text-tiktok-cyan">[T1 车内自拍素材+解说]</span> + <span class="text-tiktok-pink font-medium">[T0 数字人生活博主推荐]</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 6: T1 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-tiktok-cyan/10 text-tiktok-cyan border border-tiktok-cyan/20">T1 实拍+VO</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-parking mr-2 text-gray-500"></i>停车监控 (安全向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-500">[T2 停车场延时背景]</span> + <span class="text-tiktok-cyan font-medium">[真实抓拍小偷素材 + 安全警示音频]</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 7: T2 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-gray-700 text-gray-300 border border-gray-600">T2 AI复刻</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-bolt mr-2 text-gray-500"></i>视觉奇观 (流量向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-400 font-medium">AI 批量复刻高流量视觉素材</span> + 基础 UI 植入 <span class="text-xs text-gray-500">(流量探针)</span>
+                                </td>
+                            </tr>
+
+                            <!-- Row 8: T2 -->
+                            <tr class="hover:bg-white/5 transition-colors group border-b border-gray-700/30">
+                                <td class="p-4" data-label="形式等级">
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded text-xs font-bold bg-gray-700 text-gray-300 border border-gray-600">T2 AI复刻</span>
+                                </td>
+                                <td class="p-4 font-semibold" data-label="核心痛点">
+                                    <i class="fa-solid fa-flag-checkered mr-2 text-gray-500"></i>兴趣探索 (测试向)
+                                </td>
+                                <td class="p-4 text-gray-300" data-label="执行配方">
+                                    <span class="text-gray-400 font-medium">AI 批量复刻高完播率场景</span> + 基础 UI 植入 <span class="text-xs text-gray-500">(流量探针)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-tiktok-card border-t border-gray-800 py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <!-- Footer Logos -->
+            <div class="flex justify-center items-center gap-6 mb-8 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                 <img src="赛弗logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Seafer Logo" class="h-8 w-auto object-contain">
+                 <span class="text-xl font-bold tracking-tighter hidden" style="display: none;">SEAFER<span class="text-tiktok-cyan">.</span></span>
+                 
+                 <div class="h-4 w-px bg-white/20"></div>
+                 
+                 <img src="cff77e5c13b12fb0e26f31941770369.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Cosai Logo" class="h-8 w-auto object-contain">
+                 <span class="text-lg font-medium text-gray-300 hidden" style="display: none;">COSAI</span>
+            </div>
+
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 tracking-wider">
+                <span class="text-gray-500">Viral Structure</span> + 
+                <span class="text-tiktok-cyan">Real Footage</span> + 
+                <span class="text-tiktok-pink">Digital Trust</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-tiktok-cyan to-tiktok-pink mx-auto mb-8 rounded-full"></div>
+            
+            <div class="bg-black/30 backdrop-blur-sm border border-white/10 p-8 rounded-2xl inline-block w-full max-w-md">
+                <p class="text-gray-400 mb-4">Preliminary Strategy Overview</p>
+                <div class="w-full bg-white/5 text-gray-300 font-medium py-4 rounded-xl flex items-center justify-center gap-2 cursor-default border border-white/10">
+                    <i class="fa-solid fa-file-signature text-tiktok-cyan"></i>
+                    初步方案已生成 · 等待进一步沟通
+                </div>
+            </div>
+            
+            <div class="mt-12 text-gray-600 text-sm">
+                &copy; 2025 Seafer & Cosai. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
